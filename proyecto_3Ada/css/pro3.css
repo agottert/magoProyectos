@@ -1,0 +1,55 @@
+h1 {
+ 	text-align: center;
+ 	color:#f1f6f5 ;
+ 	background-color: rgba(192,192,192,0.5);
+  padding: 50px;
+  font-family: Cabin Sketch;
+  font-size: 50px;
+}
+
+hr {
+  text-align: center;
+  color: white;
+}
+ul {
+  color:#f1f6f5;
+  font-size: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  color:white;
+}
+
+.painting {
+  display: inline-block;
+  font-family: Pompiere;
+  color:white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(192,192,192,0.5);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#menu {
+  background-color: rgba(255, 0, 0, 0.2);
+  display: inline-block;
+  font-family: Pompiere;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  vertical-align: top;
+}
+  
+
+#galery { 
+  display: inline-block;
+  margin-left: 80px;
+  vertical-align: top;
+}
+
+
