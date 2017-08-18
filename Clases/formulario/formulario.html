@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+        <meta charset="utf-8">
+         <title> FORMULARIOS
+         </title>
+         <link href="css/.css" type="text/css" rel="stylesheet">
+     </head>
+     <body>
+        <form action="formulario.html" method="get">
+            <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribí algo" required></input>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribí algo" required></input>
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" min="1" max="98" name="edad" id="edad" placeholder="Escribi tu edad"required step="2"></input>
+        </div>
+        <div>
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="nacimiento">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" placeholder="Escribí algo" required></input>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje</label>
+
+            <input type="textarea" name="mensaje" placeholder="Escribí algo" minlength="3" maxlength="6"> </input>
+        </div> 
+        <button type="enviar">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">No hago nada</button>
+        
+         <div>
+        <label for="terminosycondiciones">Terminos y Condiciones</label>
+        <input id="terminosycondiciones" type="checkbox" checked="true"></input>
+        </div>
+
+         <label for="terminosycondiciones-si">Si</label>
+
+         <input id="terminosycondiciones-si" type="radio" name="terminosycondiciones"></input>
+          
+
+          <label for="terminosycondiciones-no">No</label>
+          <input id="terminosycondiciones.no" type="radio"  name="terminosycondiciones"></input>
+      <div>
+        <input type="file" name="foto">
+    </div>
+
+    <div>
+        <select id="algoqueseseleccione"name="algoqueseseleccione">
+            <option disable="true" selected="true"> Selecciona algo </option>
+
+            <option selected="true">Opción 1</option>
+            <option>Opción 2</option>
+            <option>Opción 3</option>
+            
+        </select></div>
+        <div>
+            <label for="algoconrange">Algo con rango</label>
+            <input type="range" id="algoconrange" name="algoconrange" required>
+        </div>
+
+
+     </body>
