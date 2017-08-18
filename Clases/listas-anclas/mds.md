@@ -4,7 +4,7 @@
 
 * ANIDADAS
 
-### EJEMPLO DE LISTA NO ANIDADA
+
 
 ### EJEMPLOS: 
 
@@ -36,7 +36,7 @@
 
 ```
 
-<ul>
+<ol>
        <li>Window</li>
      <ul>
         <li>Minimize</li>
@@ -50,5 +50,5 @@
         <li>Documentation</li>
         <li>Twitter</li>
      </ul>
-</ul>
+</ol>
 ```  
