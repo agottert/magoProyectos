@@ -1,0 +1,17 @@
+ 
+ #container {
+    margin: 0 auto;
+    width:80%;
+    height: 700px; 
+
+ }  
+
+ .left {
+    width:25%;
+    height:700px;
+    float: left;
+ }
+ .pink{background-color: #FF66FFFF}
+ .violet {background-color:#8000FFFF}
+ .blue {background-color:#0080FFFF}
+ .green {background-color:#80FF00FF}
