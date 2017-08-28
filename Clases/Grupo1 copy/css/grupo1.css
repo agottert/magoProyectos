@@ -1,0 +1,35 @@
+#container{ margin: 0 auto;
+width: 1000px;
+height: 100px;
+}
+.imagen {float:left;
+width:200px;
+height:100px;
+background-image: url("../img/cuadrado5.jpeg");
+}
+.menu {
+    
+    width: 800px;
+    height:100px;
+    background-color: #66FFCCFF;
+    float:left;
+}
+
+.lista {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Josefin Sans";
+
+}
+.producciones:active{
+
+
+
+
+}
+.producciones2{ display: none; 
+ }
+
+ a{text-decoration: none;}

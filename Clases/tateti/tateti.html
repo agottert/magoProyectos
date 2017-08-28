@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TATETI</title>
+    <link rel="stylesheet" href="css/tateti.css">
+</head>
+<body>
+    <div id="container">
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+    </div>
+    <script>
+        // Colaboración de Hernán Rodríguez Colmeiro
+        let juega = 'circulo';
+        document.querySelector('#container').addEventListener('click', (e) => {
+            if (e.target.classList.contains('celda')) {
+                const celda = e.target;
+                if (celda.classList.length == 1) {
+                    celda.classList.add(juega);
+                    juega = (juega == 'circulo') ? 'cruz' : 'circulo';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
