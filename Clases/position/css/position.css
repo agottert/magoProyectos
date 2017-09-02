@@ -1,0 +1,75 @@
+
+h1{text-align: center;
+   font-family: Rock Salt;
+   font-size: 55px;}
+header p{text-align: center;
+	     font-family: Rock Salt;
+         }
+ul{min-height: 85px;}         
+ul li{ display: inline-block; }
+nav{text-align:center;}
+li {list-style: none;
+    margin-right: 45px;
+    font-family: Rock Salt;
+    font-size: 20px;
+    line-height: 75px;
+    }
+ li:hover {font-size: 35px;
+           color:pink;}  
+ li{transition: color 0.5s linear 0.2s;
+    transition: font-size 0.5s ease 0.2s;
+   }           
+.ilustraciones{display: inline-block;}
+main{margin: 0 auto;
+}
+.redes{display: inline-block;}
+.padre_redes{text-align: center;}
+
+.cont_imagenes{margin:auto;
+	           width:758px;
+               position:relative;
+                }
+.delante{
+	position: absolute;
+	bottom:50%;
+	left: 50%;
+	top:50%;
+	z-index: 1;
+	width:500px;
+	min-height: 80px;
+    line-height: 80px;
+
+
+}
+
+
+#fantasma{font-family: Dancing Script;
+          font-size: 50px;
+          margin:0;
+      }
+          
+#kokoro{font-family: Macondo;
+        font-size: 70px;
+        margin:0;
+}
+#kayros{font-family: Cantarell;
+        font-size: 70px;
+        margin:0;
+}
+#fondo_1{background-color: rgba(0,255,0,0.3);
+			margin-left: -250px;
+			text-align: center;
+			margin-top: -40px;
+}
+#fondo_2{background-color: rgba(255,0,0,0.3);
+            margin-left: -250px;
+			text-align: center;
+			margin-top: -40px;}
+#fondo_3{background-color: rgba(255,255,0,0.3);
+         margin-left: -250px;
+	     text-align: center;
+	     margin-top: -40px;}
+
+footer {margin-top: 80px;}	
+.redes{margin-right:50px;
+       margin-left:50px;}     
