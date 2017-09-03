@@ -1,4 +1,8 @@
 
+
+body{background-image: url("../img/fondo_celeste.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;}
 h1{text-align: center;
    font-family: Rock Salt;
    font-size: 55px;}
@@ -15,7 +19,7 @@ li {list-style: none;
     line-height: 75px;
     }
  li:hover {font-size: 35px;
-           color:pink;}  
+           color:rgb(252,27,192);}  
  li{transition: color 0.5s linear 0.2s;
     transition: font-size 0.5s ease 0.2s;
    }           
@@ -38,6 +42,7 @@ main{margin: 0 auto;
 	width:500px;
 	min-height: 80px;
     line-height: 80px;
+    border-radius: 50%;
 
 
 }
@@ -56,20 +61,21 @@ main{margin: 0 auto;
         font-size: 70px;
         margin:0;
 }
-#fondo_1{background-color: rgba(0,255,0,0.3);
+#fondo_1{background-color: rgba(51,197,195,0.5);
 			margin-left: -250px;
 			text-align: center;
 			margin-top: -40px;
 }
-#fondo_2{background-color: rgba(255,0,0,0.3);
+#fondo_2{background-color: rgba(51,197,195,0.5);
             margin-left: -250px;
 			text-align: center;
 			margin-top: -40px;}
-#fondo_3{background-color: rgba(255,255,0,0.3);
+#fondo_3{background-color: rgba(51,197,195,0.5);
          margin-left: -250px;
 	     text-align: center;
 	     margin-top: -40px;}
 
-footer {margin-top: 80px;}	
+footer {margin-top: 80px;
+        margin-bottom: 80px; }	
 .redes{margin-right:50px;
        margin-left:50px;}     
