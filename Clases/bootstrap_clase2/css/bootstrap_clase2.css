@@ -1,0 +1,29 @@
+.violet{background-color: violet;
+  height: 480px;}
+
+.pink{background-color: pink;
+       height:480px;}
+
+ .alto{height: 50px;}   
+
+ .section_aside{margin-bottom: 2px;
+                }
+ .fondo{background-image: url("../img/1264.jpg");
+        min-height: 400px;
+}
+
+.gif{background-image: url("https://media.giphy.com/media/3xz2BRU6WpaxKiPzuE/giphy.gif");
+      height: 400px;
+      }
+.black{background-color: black;
+       height:50px;
+       margin-bottom: 0;
+       }
+img {margin-top: 40px;
+     }  
+
+ h2{text-align: center;} 
+ p{text-align: justify;}        
+
+ .navbar-default .navbar-nav > li > a{ color:white; }
+ .navbar-default .navbar-brand{color:white;}

@@ -1,0 +1,115 @@
+.amarillo{
+  background-color: rgba(255,255,255,0.5);
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  /*height: 185px;*/
+}
+body{
+  background-image: url("../img/fondo.jpg");
+  font-family: "Roboto",sans-serif;
+
+  /*height:1037px;*/
+}
+
+.alineacion {
+  text-align: left;
+  text-decoration: none;
+  color:black;
+  /*line-height: 180px;*/
+  font-size: 18px;
+  font-family: "Roboto",sans-serif;
+}
+.alineacion:hover{
+  text-decoration-line: none;
+  font-weight:bold;
+  color:black;
+}
+
+.fondo2{
+  background-color: #82E8B7;
+  padding: 20px;
+/*  width:653.65px;
+  height: 800px;*/
+}
+.fondo3{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+.caja { 
+  border-style: dashed;
+  border-color: black;
+  border-width: 3px;
+  /*height: 185px;*/
+  /*width: 240px;*/
+  /*margin-top: 20px;*/
+  /*margin-left: 20px;*/
+  /*line-height: 180px;*/
+  text-align: center;
+  padding: 80px 0;
+}
+.alineacion2 {color:black;
+}
+.ancho{width: 990px;}
+
+.posicion{margin:auto;
+width: 70%;}
+
+.espacio{ padding-right:60px; }
+
+.caja1{padding-bottom: 80px;}
+
+h1{font-family: "Roboto",sans-serif;}
+
+.fondo2 p{ 
+  line-height: 27px;
+  margin-bottom: 20px;
+  text-align: justify;
+  
+}
+.caja p{ /*line-height: 27px;
+         margin-bottom: 20px;*/
+         text-align: center;
+         
+         font-size: 16px;
+         margin:0;}
+
+.amarillo2{background-color: rgba(255,255,255,0.5);
+           padding: 30px 20px;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content: space-between;
+           font-size: 16px;
+}
+.design{font-size: 16px;
+         margin:0;}
+.link{color:black;
+}
+.contenido{display:flex;}
+.link a {color:black;
+         text-decoration: underline;
+         margin-left: 20px;}
+.link a:hover{ text-decoration: none; }
+.redes {font-size: 16px;
+         }
+
+@media (max-width: 768px){
+  .amarillo { flex-direction: column; }
+  .contenido {flex-direction: column;}
+  .amarillo2{flex-direction: column;
+             text-align: center;}
+  .amarillo2 .redes {text-align: center;} 
+  .orden{order:1;}   
+  .link a {margin-left: 0;}    
+  .espacio{padding: 0;
+           text-align: center;}
+
+
+
+}

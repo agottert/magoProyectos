@@ -1,0 +1,30 @@
+.container{margin: 0auto;}
+
+
+.lightblue{background-color: #59FFFAFF;
+
+         
+         }
+.pink{background-color: #FF38F0FF;
+    }         
+
+.black{background-color: black;
+}    
+.blue{background-image:url(https://media.giphy.com/media/xUA7aM80YLoJEj5yxO/giphy.gif);}
+.white{background-image:url(https://media.giphy.com/media/EUgI9BSalN3mo/giphy.gif);}
+.green{background-color: #00D400FF;}
+.red{background-color: red;}
+.yellow{background-image:url(https://media.giphy.com/media/Xn2TpDGEEl2O4/giphy.gif);
+}
+
+
+.size1 {height: 500px;
+	    
+       }
+.size2{height:40px;
+       }
+.size3{height:122px;
+       }       
+
+.gradient{  background: linear-gradient(to left, #091011, #dff2e8); }       
+

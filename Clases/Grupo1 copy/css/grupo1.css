@@ -23,13 +23,13 @@ background-image: url("../img/cuadrado5.jpeg");
     font-family: "Josefin Sans";
 
 }
-.producciones:active{
+.producciones:hover{}
 
 
 
 
 }
 .producciones2{ display: none; 
- }
+                }
 
  a{text-decoration: none;}
