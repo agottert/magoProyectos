@@ -1,0 +1,56 @@
+body{
+	background-image:url("../img/bk2.png"); 
+}
+
+.txtlg {
+	font-size: 60px;
+}
+
+.txtmd {
+	font-size: 16px;
+	text-align: left;
+	padding: 15px;
+}
+
+.padgen {
+	padding: 40px 0px 40px 0px;
+}
+
+.nodisp {
+	display: none;
+}
+label{padding: 3px;}
+
+.circulo{
+	border-radius: 50%;
+	height: 200px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 200px;
+	padding: 0;
+	background-size: cover;
+	margin: auto;
+}
+
+.range {
+	margin-top: 89px;
+}
+
+.boton{ text-align: center;
+padding: 40px;
+
+ }
+.boton2{padding: 20px;
+        font-size: 30px;}
+.oculto{ display:none; }
+form{margin: auto;}
+.ajuste{padding-left: 330px;
+        border: solid 2px black;
+        border-radius: 30px;
+        background-color: rgba(255,255,255,0.2);}
+
+ .share{ width:200px;
+         margin-left:-100px;
+         margin-top: -15px;}
+ .botones{padding-left: 200px;}       
+ 
