@@ -9,27 +9,30 @@
     </head>
     <body>
         
-        <div class="container ancho">
-            <header class="row menu">
-                <nav class="col-md-12 menu_ancho">
-                    <div id="baner">
-                        <img src="img/logo-xs.png" alt="">
-                        <h1><span class="text-cream">Plant</span><span class="text-naranja">-</span><span class="text-bordo">Based</span> <span class="text-naranja">Meal</span> <span class="text-cream">Delivery</span></h1>
+        <div class="container ">
+         <header class="row">
+                <nav class="col-md-12" style="z-index: 1">
+                   <div id="baner">
+                        <div >
+                        <img class="img-responsive imagen" src="img/logo-xs.png" alt="">
+                        </div>
+                        <h1><span class="text-cream">Plant</span><span class="text-naranja delete">-</span><span class="text-bordo">Based</span> <span class="text-naranja">Meal</span> <span class="text-cream">Delivery</span></h1>
                         <div class="Idioma">
-                            <a href="#" class="text-bordo TextSizeMedio">Español</a><a class="text-cream TextSizeMedio">/</a><a href="#" class="text-naranja TextSizeMedio">English</a>
+                            <a href="#" class="text-bordo TextSizeMedio">Español</a><a class="text-cream TextSizeMedio barra">/</a><a href="#" class="text-naranja TextSizeMedio">English</a>
                         </div>
                     </div>
                     <div class="ListaNavegador">
-                        <div class="ItemsNavegador Inicio"><a class="linkNav" href="#">Inicio</a></div>
-                        <div class="ItemsNavegador Menu"><a class="linkNav" href="#">Menu</a></div>
-                        <div class="ItemsNavegador Locales"><a class="linkNav" href="#">Locales</a>
+                        <div class="ItemsNavegador Inicio"><a class="linkNav" id="InicioLink" href="#">Inicio</a></div>
+                        <div class="ItemsNavegador Menu"><a class="linkNav" id="MenuLink" href="#">Menu</a></div>
+                        <div class="ItemsNavegador Locales"><a class="linkNav" id="LocalesLink" href="#">Locales</a></div>
+                        <div class="ItemsNavegador Contacto"><a class="linkNav" id="ContactoLink" href="#">Contacto</a></div>
+                        <div class="ItemsNavegador Pedidos"><a class="linkNav" id="PedidosLink" href="#">Pedidos Online</a></div>
                     </div>
-                    <div class="ItemsNavegador Contacto"><a class="linkNav" href="#">Contacto</a></div>
-                    <div class="ItemsNavegador Pedido"><a id="linkNavPed" href="#">Pedido Online</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+                    
+                </nav>
+            </header>
+
+            
     <div class="row alto">
         <div class="col-md-12  ">
             <div class="fondo_bordo">
@@ -44,18 +47,18 @@
             <div class="formulario">
                 <form>
                     <div class="row">
-                        <div class="col-md-6 datos">
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
                             <input type="text" class="form-control" placeholder="Nombre">
                         </div>
-                        <div class="col-md-6 datos">
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
                             <input type="text" class="form-control" placeholder="Telefono">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 datos">
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
                             <input type="text" class="form-control" placeholder="ejemplo@ejemplo">
                         </div>
-                        <div class="col-md-6 datos">
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
                             <input type="text" class="form-control" placeholder="Localidad">
                         </div>
                     </div>
@@ -81,15 +84,17 @@
     
     
     <footer>
+        <div class="fixed-bottom">
         <div class="row alto " >
             <div class="col-md-12">
               <div class="alineacion_footer">
                 <p>Enjoy Vegan<br/>ingo@enjoyvegan.com.ar</p>
-                <div>
+                <div class="redes_mobile">
                     <a href="#"><img src="img/pequeface.png" alt="facebook"></a>
                     <a href="#"><img src="img/pequetwit.png" alt="twitter"></a>
                     <a href="#"><img src="img/pequeinsta.png" alt="instagram"></a>
                 </div>
+
                 <p>Calle Falsa 123, CABA<br/>+54 90-800-123-4567</p>
             </div>
         </div>
@@ -98,6 +103,7 @@
                 <p style="text-align: center">Copyright © Todos los Derechos Reservados -2017<br/>Powered by Pink_pixels</p>
                </div> 
             </div>
+        </div>
         </div>
     </footer>
 </div>
