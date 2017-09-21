@@ -226,18 +226,34 @@ display:none;
 }
 }
 @media (max-width:768px){
+body{position:relative;}		
 .ListaNavegador{
 display:none;}
 .texto_bordo1{margin-right: 25px;
                margin-left: 25px}
 .formulario{ padding:30px 50px; }
 .redes_mobile{position:fixed;
-	            right: 0;}	
+	           right: 0;
+	           top:200px;
+               bottom:0px;
+               left:600px;
+               display:block;
+               z-index: 1;}	
 }
+.redes_mobile a{ display: block;
+                  padding: 5px; }
 
 @media (max-width:420px){
+body{position:relative;}	
 .redes_mobile{position:fixed;
-	            right: 0;}	
+	           right: 0;
+	           top:200px;
+               bottom:0px;
+               left:280px;
+               
+               z-index: 1;}
+ .redes_mobile a{ display: block;
+                  padding: 5px; }               	
 .ListaNavegador{
 display:none;}
 .formulario{ padding:30px 50px; }
