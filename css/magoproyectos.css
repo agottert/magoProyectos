@@ -10,16 +10,18 @@ a {margin:20px 30px;
    color:white;
    padding: 5px 10px;
    line-height: 50px;
+   white-space: nowrap;
 
 }
 
 
-.ejercicios{text-align: justify;
+.ejercicios{text-align: center;
 font-family: "Work Sans";
 }
 
 .columna{
          margin:10px;
+         text-align: center;
          
          }
          
