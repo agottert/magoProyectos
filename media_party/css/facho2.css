@@ -1,9 +1,12 @@
 body{
-	background-image:url("../img/bk2.png"); 
+	background-image:url("../img/gris.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .txtlg {
 	font-size: 60px;
+	color:white;
 }
 
 .txtmd {

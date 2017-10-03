@@ -1,0 +1,87 @@
+body{margin-bottom: 40px;
+     
+     background-image: url("https://media.giphy.com/media/dwaeIbBnF6HBu/giphy.gif");}
+
+a {margin:20px 30px;
+   font-size: 30px;
+   font-family: "Strait";
+   background-color: rgba(128,128,128,0.4);
+   border-radius: 5px;
+   color:white;
+   padding: 5px 10px;
+   line-height: 50px;
+   white-space: nowrap;
+
+}
+a:hover{text-decoration: none;}
+.circulos{display:flex;
+          flex-direction: row;}
+
+
+.animacion2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-timing-function: linear;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate; 
+    margin-left: 40px;   
+}
+@keyframes example {
+    0%   {background-color:black; left:0px; top:0%;}
+    25%  {background-color:black; left:0px; top:25%;}
+    50%  {background-color:black; left:0px; top:50%;}
+    75%  {background-color:black; left:0px; top:75%;}
+    100% {background-color:black; left:0px; top:100%;}
+ }   
+.animacion1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-direction: alternate; 
+    margin-left: 40px;   
+}
+@keyframes example1 {
+    0%   {background-color:black; left:0px; top:100%;}
+    25%  {background-color:black; left:0px; top:75%;}
+    50%  {background-color:black; left:0px; top:50%;}
+    75%  {background-color:black; left:0px; top:25%;}
+    100% {background-color:black; left:0px; top:0%;}
+ }   
+         
+h1 {font-size: 90px;
+    font-family: "Allerta Stencil";
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 70px;
+ }
+  h2{font-size: 60px;
+      font-family: "Allerta Stencil";
+      color:black;
+      margin-top: 50px;
+
+  }
+        
+
+
+
+
