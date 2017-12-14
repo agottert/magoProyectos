@@ -289,6 +289,39 @@ a:link, a:visited, a:hover, a:active{
                border-color:rgb(244,157,82);
                color:white;
                font-size: 18px; }
+.container{
+    margin-top: 100px;
+}
+.form-control{
+    margin-top: 20px;
+}
+
+#iconotexto,
+.help-block,
+#icononumero,
+#iconomail,
+#iconoasunto,
+#iconomensaje {
+    display:none;
+}
+
+.has-error #iconotexto,
+.has-success #iconotexto,
+.has-error .help-block,
+.has-error #icononumero,
+.has-success #icononumero,
+.has-error #iconomail,
+.has-success #iconomail,
+.has-error #iconoasunto, 
+.has-success #iconoasunto,
+.has-error #iconomensaje,
+.has-success #iconomensaje{
+    display:inline-block;
+}
+
+.has-error .help-block{ color: white;
+}
+
 
 /*-------------CSS DE FOOTER-------------- */
 footer {

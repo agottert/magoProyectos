@@ -61,17 +61,30 @@
         <div class="col-md-12">
             <div class="formulario">
                 <form>
+                      <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
+                          <div class="form-group has-feedback">
+                            <input  id="texto" type="text" class="form-control" placeholder="Nombre">
+                            <span id='iconotexto' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                            <span class="help-block"></span>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
+                          <div class="form-group has-feedback">
+                            <input id="numero" type="text" class="form-control" placeholder="Telefono">
+                            <span id='icononumero' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                            <span class="help-block"></span>
+                          </div>
+                         </div>
+                       </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12 datos">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
-                            <input type="text" class="form-control" placeholder="Telefono">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-xs-12 datos">
-                            <input type="text" class="form-control" placeholder="ejemplo@ejemplo">
+                          <div class="form-group has-feedback">
+                            <input id="mail" type="text" class="form-control" placeholder="ejemplo@ejemplo">
+                            <span id='iconomail' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                            <span class="help-block"></span>
+                          </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12 datos">
                             <input type="text" class="form-control" placeholder="Localidad">
@@ -79,12 +92,20 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 datos">
-                            <input type="text" class="form-control" placeholder="Asunto">
+                          <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="Asunto" id="asunto">
+                            <span id='iconoasunto' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                            <span class="help-block"></span>
+                           </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 datos">
-                            <textarea class="form-control caja" placeholder= "Escriba su mensaje..."></textarea>
+                          <div class="form-group has-feedback">
+                            <textarea class="form-control caja" placeholder= "Escriba su mensaje..." id="mensaje"></textarea>
+                             <span id='iconomensaje' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                            <span class="help-block"></span>
+                            </div>
                         </div>
                     </div>
                     
@@ -92,8 +113,8 @@
                         
                     
                     <div class="boton">
-                        <button type="reset" class="btn btn-secondary">Borrar</button>
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                        <button type="reset" class="btn btn-secondary" id="btborrar">Borrar</button>
+                        <button type="button" class="btn btn-secondary" id="btnvalidar">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -125,6 +146,9 @@
         </div>
     </footer>
   </div>
+  <script type="text/javascript" src="jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="contacto.js"></script>
 
 </body>
 </html>
