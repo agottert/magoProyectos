@@ -126,18 +126,21 @@ function enviarDatos(){
 	    console.log(jdatos);
 	    console.log(jdatosjson);
 
-	    /*$.ajax({
-	    	url: "./",
+	    $.ajax({
+	    	url: "http://localhost:8080/api/contacto.php",
 	    	type: "post",
-	    	data:jdatosjason ,
+	    	data:jdatos ,
 	    	success: function (response) {
 	    		if(response != false) { 
-	    			alert(response); 
+	    			alert(response.mensaje); 
+                    
+
+
 	    		}else{
 		
 	    		}
 	    	}
-		});*/
+		});
     } else {
     	console.log("no esta validado");
     }
