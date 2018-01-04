@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Productos - Magö Shop</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/proyectofinal.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+  
+    <div class="titulo col-md-12"> MAGÖ SHOP </div>
+  
+  <div class="container">
+   <div class="row">
+  	<!-- primer columna -->
+   	 <div class="col-md-6">
+   	 	<div class="imagen_imagen4">
+	   		<div id="imagen" class="tres_imagenes"></div>
+	   		<div id="imagen4" class="imagen_grande"></div>
+	   	</div>
+	   		<div class="caracteristicas">
+					<h2>Caracteristicas</h2>
+			    <p id="descripcion"></p>
+		    </div>
+	   </div>		
+    <!-- Segunda columna-->
+   	<div class="col-md-6 detalle_producto">
+	   	<div id="categoria" class="categoria_subcategoria">Categoría/ Subgategoría</div>
+	   	<div id="nombre" class="nombre"></div>
+	   	<div id ="precio" class="precio"></div>
+	   	<div class="cuotas">
+	   		<p>Pago en 12 cuotas con </p>
+	   		  <div>
+	   			  <img src="../img/visa.jpg" alt=""> <img src="../img/amex.jpg" alt="">
+          </div>
+   	  </div>
+ 	    <div class="envios">
+ 		    <img class="coche"src="../img/coche.png" alt="">
+ 		    <p>Envios a todo el país</p>
+     	</div>
+	    <select id="cantidad" class="form-control cantidad">
+	    </select>
+	    <button>Comprar</button>
+      <div class="stock">
+				<p id="stock"> </p>
+			</div>
+			<div class="garantia">
+				<h4>Garantia</h4>
+				<p>Compra Protegida con Magö Pago</p>
+				<p style="color:grey">Recibí el producto que esperabas o te devolvemos tu dinero</p>
+			</div>
+			<div class="pagos">
+				<h4>Medios de Pago</h4>
+				<p>Tarjetas de Credito</p>
+				<p style="color:grey" >¡Cuotas sin interés con bancos seleccionados!</p>
+				<div>
+	   			<img src="../img/visa.jpg" alt=""> <img src="../img/amex.jpg" alt="">
+        </div>
+				<p style="margin-top: 30px;">>Tarjetas de Debito</p>
+				<div>
+	   			<img src="../img/maestro.png" alt=""> <img src="../img/cabal.jpg" alt="">
+	   			<img src="../img/mastercard.jpg" alt=""> <img src="../img/visadebito.png" alt="">
+		    </div>
+				<p style="margin-top: 30px;">Efectivo</p>
+				<div>
+	   			<img src="../img/rapipago.png" alt=""> <img src="../img/pagofacil.png" alt="">
+		    </div>
+			 </div>
+		  </div>
+	   </div>
+	  </div>
+
+  	
+    <footer>
+  	  <div class="iconos_footer">
+  	  	<a href="../index.html"><img class="atras" src="../img/atras5.png" alt=""></a>   
+  	  	<a href="https://github.com/agottert/magoProyectos"><img class="github" src="../img/github.png" alt=""></a>
+  	  </div>
+    </footer>
+  
+  <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script>
+  <script>
+  	$(document).ready(function(){
+      var id=window.location.search.split('?id=');
+      id=id[1];
+      $.get("https://api.mercadolibre.com/items/"+id, function(data) {
+  		  console.log(data)
+  		  $('#precio').append('$'+data.base_price);
+  		  $('#nombre').append(data.title);
+  		  $('#stock').append('En STOCK:  '+ data.available_quantity);
+  		  for (var i=1; i<=data.available_quantity && i<=10; i++) {
+          var cantidad='<option value="'+ i +'">'+ i +'</option>';
+          $('#cantidad').append(cantidad);
+  	  	}
+  	  	for (var i=0; i<data.pictures.length && i<3; i++) {
+          var imagen=$('<div class="imagen"></div>').css('background-image', 'url('+data.pictures[i].url+')');
+          $('#imagen').append(imagen);
+  	  	}
+  	  	$('#imagen4').css('background-image', 'url('+data.pictures[0].url+')');
+
+        $.get("https://api.mercadolibre.com/categories/"+data.category_id, function(data) {
+        	$("#categoria").html(data.path_from_root[0].name + " > " + data.path_from_root[1].name);
+        });
+			});
+      $.get("https://api.mercadolibre.com/items/"+id+'/description', function(data) {
+        $('#descripcion').html(data.text ? data.text : data.plain_text.replace(/\n/g, '<br>'));
+      });
+
+
+
+		});
+	</script>
+</body>
+</html>

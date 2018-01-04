@@ -1,0 +1,232 @@
+.titulo{
+	height: 200px;
+	width: 100%;
+	background-image: url("https://media.giphy.com/media/26ufmyrjQ4BmKN7xe/giphy.gif");
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 100px;
+	margin-bottom: 100px;
+}
+
+select {
+	height: 80px;
+    width:100px;
+}
+.categorias{
+	height: 50px;
+	margin-bottom: 30px;
+}
+.imagen_imagen4{
+	margin-bottom: 60px;
+}
+
+
+footer{
+	margin-top: 100px;
+	height: 200px;
+	font-family: 'Lobster', cursive;
+	background-color: grey;
+	text-align: center;
+	font-size: 80px;
+
+}
+
+.imagen{
+	text-align: center;
+	margin:2px;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+}
+.imagen_grande {
+	background-size: cover;
+	height: 455px;
+	width: 300px;
+	margin-left: 160px;
+}
+.nombre, .categoria_subcategoria, .precio {
+	font-family: 'Pontano Sans', sans-serif;
+	line-height: 70px;
+}
+
+.cuotas, .envios,.descripcion, .descripción, .stock, h2, p, .garantia, .pagos{ font-family: 'Pontano Sans', sans-serif; }
+.categoria_subcategoria{
+	font-size: 20px;
+    color:grey;
+}
+.stock{ 
+	font-size: 30px;
+	padding-top: 15px;
+	border-bottom: solid 1px grey;
+}
+.garantia {
+	font-size: 2px;
+	margin-top: 20px;
+	border-bottom: solid 1px grey;
+}
+.pagos{
+	font-size: 2px;
+	padding-top: 15px;
+    
+}
+.nombre {
+	font-size: 40px;
+    font-weight: bold;}
+.precio{
+	font-size: 50px;}
+
+
+.envios{
+	vertical-align: bottom;
+}
+
+button{
+	margin-top: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Pontano Sans', sans-serif;
+    background-color: #7DD1FCFF;
+    margin-left: 10px;
+}
+
+.descripcion{
+	padding-left:15px;
+    font-size: 40px;
+    
+}
+.cantidad{
+	width: 60px;
+	height:35px;
+	display: inline-block;
+}
+.tres_imagenes{
+	float:left;
+}
+
+
+
+p{
+    font-size: 20px;
+}
+
+.garantia p, .pagos p{
+	font-size: 15px;
+}
+.envios p{
+	display:inline-block;
+
+
+}
+.envios{padding-top: 20px;}
+.garantia h4, .pagos h4{
+	font-weight: bold;
+}
+
+.thumbnail img{
+	max-height: 200px;
+
+}
+.atras{
+	position:absolute;
+	left:30px;
+	top:70px;
+}
+footer .github{
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+    transition:width 1s, height 1s;
+	border-radius: 50%;
+
+}
+footer .github:hover{
+	width: 165px;
+	height: 165px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+.informacion{padding-left: 0px;}
+
+.thumbnail p{
+	font-family: 'Pontano Sans', sans-serif;
+    font-size: 18px;}
+
+#descripcion {
+	overflow:hidden;
+}
+.detalle_producto{
+	padding-left: 50px;
+
+}
+footer{
+	position: relative;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid pink;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width:320px) and (max-width:500px){
+.titulo, footer{
+	font-size: 60px;
+
+
+}
+.imagen_grande{
+	display:none;
+}
+.imagenes{
+	display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:none;
+}
+.caracteristicas{
+	border:none;
+}
+	
+
+}
+
+
+
+
+
