@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
 
 const List=({ usuarios })=>(
     
-    <table>
+    <table className="list">
      <tbody>   
       <tr>
         <th>Nombre</th>

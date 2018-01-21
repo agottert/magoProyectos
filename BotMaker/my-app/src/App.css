@@ -10,3 +10,12 @@ input{
   margin:10px;
   
 }
+.list{
+  text-align: center;
+  margin: 0 auto;
+  margin-top:30px;
+}
+.list td, .list th{
+  padding:10px;
+  
+}
