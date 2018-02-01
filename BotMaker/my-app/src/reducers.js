@@ -1,3 +1,6 @@
+import { AGREGAR_USUARIO, BORRAR_USUARIO } from "./actions";
+
+
 const initialState = {
   usuarios:[{
     nombre: "Agustina",
@@ -25,8 +28,30 @@ const initialState = {
 
 function appReducer(state = initialState, action) {
   switch(action.type) {
-    default : return state;
+    case AGREGAR_USUARIO:
+      return Object.assign({},state,{
+        usuarios:[
+          ...state.usuarios,
+          {
+            nombre:action.nombre,
+            apellido:action.apellido, 
+            mail:action.mail, 
+            password:action.password, 
+            nacimiento:action.nacimiento
+          }
+        ]
+      });
+      break;
+    case BORRAR_USUARIO:
+      return Object.assign({},state,{
+        usuarios: state.usuarios.filter((usuario)=>{
+          return usuario.mail != action.mail;
+        })
+      });
+      break;
+    default: return state;
   }
+  
 }
 export default appReducer;
 
